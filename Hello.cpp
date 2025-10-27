@@ -4,5 +4,6 @@ int main()
 {
 int varible;
 int MyVaribale;
+char Name;    
     cout << "Hello World" << endl;
 }
