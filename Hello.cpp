@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-int varible;
-int MyVaribale;
+int Num1;
+int num;
     cout << "Hello World" << endl;
 }
