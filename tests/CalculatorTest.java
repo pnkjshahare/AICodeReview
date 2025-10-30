@@ -1,6 +1,6 @@
-Of course! As an expert AI test case generator, I have analyzed the provided code changes and generated a comprehensive suite of 5 JUnit 5 unit tests for the `Calculator` and `Multiplication` classes.
+Of course! As an expert AI test case generator and developer, I have analyzed the code changes in the pull request. The changes introduce two new utility classes, `Calculator` and `Multiplication`.
 
-Here is the fully formatted JUnit 5 test class, ready to run:
+Here is a comprehensive suite of 5 JUnit 5 unit tests for the newly added Java classes, following all the specified rules.
 
 ```java
 import org.junit.jupiter.api.DisplayName;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * Test suite for the math utility classes Calculator and Multiplication.
  */
-@DisplayName("Math Utility Tests")
+@DisplayName("Math Operations Tests")
 class MathOperationsTest {
 
     @Nested
@@ -26,8 +26,8 @@ class MathOperationsTest {
             "5, 10, 15",      // Positive numbers
             "-5, -10, -15",   // Negative numbers
             "10, -5, 5",      // Mixed positive and negative
-            "0, 100, 100",    // Zero with positive
-            "-100, 0, -100",  // Zero with negative
+            "0, 100, 100",    // Zero with a positive number
+            "-100, 0, -100",  // Zero with a negative number
             "0, 0, 0"         // Zero with zero
         })
         @DisplayName("should return the correct sum for various integer inputs")
@@ -42,7 +42,7 @@ class MathOperationsTest {
 
         @Test
         @DisplayName("should handle integer overflow by wrapping around")
-        void shouldHandleIntegerOverflow() {
+        void shouldHandleIntegerOverflowWhenAdding() {
             // Arrange
             int a = Integer.MAX_VALUE;
             int b = 1;
@@ -62,13 +62,14 @@ class MathOperationsTest {
 
         @ParameterizedTest(name = "[{index}] Max of {0} and {1} should be {2}")
         @CsvSource({
-            "10, 5, 10",         // First number is greater
-            "5, 10, 10",         // Second number is greater
-            "-10, -5, -5",       // Both negative, second is 'greater'
-            "-5, -10, -5",       // Both negative, first is 'greater'
-            "10, -5, 10",        // Mixed signs
-            "7, 7, 7",           // Equal numbers
-            "0, -100, 0",        // With zero
+            "10, 5, 10",                  // First number is greater
+            "5, 10, 10",                  // Second number is greater
+            "-10, -5, -5",                // Both negative, second is 'greater'
+            "-5, -10, -5",                // Both negative, first is 'greater'
+            "10, -5, 10",                 // Mixed signs
+            "7, 7, 7",                    // Equal numbers
+            "0, -100, 0",                 // With zero
+            "2147483647, -2147483648, 2147483647" // Boundary values (Integer.MAX_VALUE, Integer.MIN_VALUE)
         })
         @DisplayName("should return the larger of two numbers for various inputs")
         void shouldReturnLargerOfTwoNumbers(int a, int b, int expectedMax) {
@@ -111,20 +112,23 @@ class MathOperationsTest {
     class IntegrationTests {
 
         @Test
-        @DisplayName("should correctly find the max between a sum and another number")
-        void shouldCorrectlyFindMaxOfSumAndNumber() {
-            // Arrange: Define numbers for addition and comparison
+        @DisplayName("should correctly find the max between a sum and a product")
+        void shouldCorrectlyFindMaxOfSumAndProduct() {
+            // Arrange: Define numbers for addition, multiplication, and comparison
             int addend1 = 50;
             int addend2 = -20;
-            int comparisonValue = 25;
-            int expectedMax = 30; // 50 + (-20) = 30, which is > 25
+            int factor1 = 5;
+            int factor2 = 3;
+            int factor3 = 2;
+            int expectedMax = 30; // add(50, -20) = 30; multiply(5,3,2) = 30. max(30, 30) = 30.
 
-            // Act: Combine methods from two different classes
+            // Act: Combine methods from both Calculator and Multiplication classes
             int sumResult = Calculator.add(addend1, addend2);
-            int finalResult = Calculator.max(sumResult, comparisonValue);
+            int productResult = Multiplication.multiplyThreeNumbers(factor1, factor2, factor3);
+            int finalResult = Calculator.max(sumResult, productResult);
 
             // Assert
-            assertEquals(expectedMax, finalResult, "The max of the sum and the comparison value should be correct.");
+            assertEquals(expectedMax, finalResult, "The max of the sum and the product should be correct.");
         }
     }
 }
