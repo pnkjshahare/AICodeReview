@@ -1,4 +1,4 @@
-Of course. As an expert AI test case generator and developer, I have analyzed the provided `Calculator.java` class and will now generate a comprehensive set of 5 JUnit 5 unit tests.
+Of course. As an expert AI test case generator and developer, I have analyzed the provided `Calculator.java` class from the pull request and will now generate a comprehensive set of 5 JUnit 5 unit tests.
 
 The following test class adheres to all the specified rules, including using `@Nested` classes for organization, `@ParameterizedTest` for efficiency, and covering positive, negative, zero, and boundary value scenarios.
 
@@ -67,7 +67,7 @@ class CalculatorTest {
             int actual = Calculator.add(first, second);
 
             // Then
-            assertEquals(expected, actual, "Subtracting 1 from Integer.MIN_VALUE should underflow to Integer.MAX_VALUE");
+            assertEquals(expected, actual, "Adding -1 to Integer.MIN_VALUE should underflow to Integer.MAX_VALUE");
         }
     }
 
@@ -80,7 +80,7 @@ class CalculatorTest {
             "3, 2, 3",          // First argument is greater
             "2, 3, 3",          // Second argument is greater
             "5, 5, 5",          // Arguments are equal
-            "-3, -2, -2",       // Both arguments are negative
+            "-3, -2, -2",       // Both arguments are negative, second is 'greater'
             "5, -5, 5",         // Mixed sign numbers
             "0, 10, 10",        // Zero and a positive number
             "-10, 0, 0"         // Zero and a negative number
