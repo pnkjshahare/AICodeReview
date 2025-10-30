@@ -1,4 +1,4 @@
-Of course! As an expert AI test case generator and developer, I have analyzed the code changes in the pull request. The changes introduce two new utility classes, `Calculator` and `Multiplication`.
+Of course! As an expert AI test case generator and developer, I have analyzed the code changes in the pull request. The changes introduce two new utility classes, `Calculator` and `Multiplication`, with basic mathematical operations.
 
 Here is a comprehensive suite of 5 JUnit 5 unit tests for the newly added Java classes, following all the specified rules.
 
