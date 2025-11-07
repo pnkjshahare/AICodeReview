@@ -3,7 +3,7 @@ public class Calculator {
 
     // Adds two numbers
     public static int add(int a, int b) {
-        return a + b;
+        return a + b+c+d;
     }
 
     // Returns maximum of two numbers
