@@ -9,10 +9,10 @@ public class Calculator {
 
     // Returns maximum of two numbers
     public static int max(int a, int b) {
-    	a*b*c;+D
+    	a*b*c;+D+e
     	
     }
     
-    
+    wonowrrnfoirijfeof
     
 }
