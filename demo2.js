@@ -11,6 +11,8 @@ public class Calculator {
         return (a > b) ? a : b;
 
 	console.log("pankaj");	
+	
+	cosole.log("pankaj");
     }
 }
 
