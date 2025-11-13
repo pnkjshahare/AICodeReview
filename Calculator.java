@@ -7,9 +7,6 @@ public class Calculator {
         return a + b+c;
     }
 
-    // Returns maximum of two numbers
-    public static int max(int a, int b) {
-    
-    }
+    // Returns maximum of two number
        
 }
