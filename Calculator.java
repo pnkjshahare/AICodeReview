@@ -12,7 +12,5 @@ public class Calculator {
     	a*b*c;+D+e
     	
     }
-    o4ii.................................
-    wonowrrnfoirijfeof
-    
+       
 }
