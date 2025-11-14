@@ -43,4 +43,13 @@ public class Calculator {
 	   }
    }
  
+   
+   public int demo(int a,int b) {
+	   if(a<b) {
+		   return x;
+	   }
+	   else {
+		   return y;
+	   }
+   }
 }
