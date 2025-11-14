@@ -14,9 +14,4 @@ public class Calculator {
     	if(a>b) {
     		return a
     				
-    				
-    				
-    				
-    				cosole.log("pankaj");
-    	    	    	
 }
