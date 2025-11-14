@@ -9,10 +9,9 @@ public class Calculator {
     // Returns maximum of two numbers
     public static int max(int a, int b) {
         return (a > b) ? a : b;
-
-	console.log("pankaj");	
-	
-	cosole.log("pankaj");
+    }
+    public static void main(int a,int b){
+        FileSystem.out.println("pankaj");
     }
 }
 

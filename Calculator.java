@@ -33,6 +33,14 @@ public class Calculator {
 		   return y;
 	   }
    }
-    		
+    
+   public int minNo(int a,int b) {
+	   if(a<b) {
+		   return x;
+	   }
+	   else {
+		   return y;
+	   }
+   }
  
 }
