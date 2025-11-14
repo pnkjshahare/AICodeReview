@@ -23,15 +23,16 @@ public class Calculator {
     			else {
     				return b;
     			}
-    		}
+   }
+    
+   public int maxNo(int a,int b) {
+	   if(a<b) {
+		   return x;
+	   }
+	   else {
+		   return y;
+	   }
+   }
     		
-    		
-    		public int minNo(int a,int b) {
-    			if(a<b) {
-    				return a;
-    			}
-    			else {
-    				return b;
-    			}
-    		}
+ 
 }
