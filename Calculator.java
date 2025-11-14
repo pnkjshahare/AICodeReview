@@ -26,5 +26,11 @@ public class Calculator {
     	    		return b;
     	    	}
     	       
-    	
+    	    	 public int maxNo(int a,int b) {
+    	    	    	if(a>b) {
+    	    	    		return a;
+    	    	    	}
+    	    	    	else {
+    	    	    		return b;
+    	    	    	}
 }
