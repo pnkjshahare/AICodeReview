@@ -12,25 +12,11 @@ public class Calculator {
     
     public int maxNo(int a,int b) {
     	if(a>b) {
-    		return a;
-    	}
-    	else {
-    		return b;
-    	}
-     
-    	 public int maxNo(int a,int b) {
-    	    	if(a>b) {
-    	    		return a;
-    	    	}
-    	    	else {
-    	    		return b;
-    	    	}
-    	       
-    	    	 public int maxNo(int a,int b) {
-    	    	    	if(a>b) {
-    	    	    		return a;
-    	    	    	}
-    	    	    	else {
-    	    	    		return b;
-    	    	    	}
+    		return a
+    				
+    				
+    				
+    				
+    				cosole.log("pankaj");
+    	    	    	
 }
