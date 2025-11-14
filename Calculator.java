@@ -14,4 +14,15 @@ public class Calculator {
     	if(a>b) {
     		return a
     				
+    				
+    				
+   public int minNo(int a,int b) {
+    			if(a<b) {
+    				return a;
+    			}
+    			else {
+    				return b;
+    			}
+    		}
+    				
 }
