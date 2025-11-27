@@ -9,4 +9,8 @@ int main()
 int Name=0;
 cout << "Hello World" << endl;
  Print();   
+ cout << "Hello World" << endl;
+ Print();   
+ cout << "Hello World" << endl;
+ Print();   
 }
