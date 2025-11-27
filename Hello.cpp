@@ -6,8 +6,7 @@ cout<<"Hello World"<<endl;
 }
 int main()
 {
-int varible;
-int MyVaribale;
+int Name=0;
 cout << "Hello World" << endl;
  Print();   
 }
