@@ -4,11 +4,17 @@ using namespace std;
 void Print(){
 cout<<"Hello World"<<endl;
 }
+void Print(){
+cout<<"Hello World"<<endl;
+}
+void Print(){
+cout<<"Hello World"<<endl;
+}
 int main()
 {
 int varible;
 int MyVaribale;
 cout << "Hello World" << endl;
  Print();   
-  Print();   
+ Print();   
 }
