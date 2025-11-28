@@ -10,4 +10,5 @@ int varible;
 int MyVaribale;
 cout << "Hello World" << endl;
  Print();   
+  Print();   
 }
